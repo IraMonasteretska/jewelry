@@ -20,21 +20,19 @@ $('a[href="#top"]').on('click', function () {
 });
 
 
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 4000,
-  },
-});
-
-
 $(document).ready(function () {
   $('.header__burger-img').click(function () {
     $('.header__mobile-menu').toggleClass('open__menu');
     $('.header__burger-img').toggleClass('header__burger-img__remove');
     $('body').toggleClass('fixed');
   });
+});
+
+
+$('.grid').isotope({
+  itemSelector: '.grid-item',
+  masonry: {
+    columnWidth: 100,
+    horizontalOrder: true,
+  }
 });

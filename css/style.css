@@ -752,6 +752,14 @@ header {
   text-align: center;
   color: #ffffff;
 }
+.map__link p {
+  margin-bottom: 17px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 129.5%;
+  color: #000000;
+}
 .map__link {
   display: flex;
   flex-direction: column;
